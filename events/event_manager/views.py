@@ -167,8 +167,6 @@ class EventViewSet(viewsets.ModelViewSet):
 #         serializer = EventExperienceSerializer(experiences, many=True)
 #         return Response(serializer.data)
 
-from rest_framework.decorators import action
-
 class ExperienceViewSet(viewsets.ModelViewSet):
     queryset = EventExperience.objects.all()
     serializer_class = EventExperienceSerializer
